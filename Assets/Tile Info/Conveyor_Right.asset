@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86bf59bbe49bb745a03b507ab71823b, type: 3}
   m_Name: Conveyor_Right
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
-  tiles: []
+  tiles:
+  - {fileID: 11400000, guid: 9265aeb9c37c020438b83eade4e1d09c, type: 2}
   direction: 1
