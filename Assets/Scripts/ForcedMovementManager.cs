@@ -51,20 +51,16 @@ public class ForcedMovementManager : MonoBehaviour
         int tileDirection = dataFromTiles[currentTile].direction;
         int futureTileDirection = dataFromTiles[futureTile].direction;
 
-        if (futureTileDirection < 3 && futureTileDirection != 0)
+        if (futureTileDirection < 3)
         {
             PlayerController.inputCheck = false;
         }
-
-        pastGridCoordinate = gridCoordinate;
 
 
         if (PlayerController.arrived)
         {
             switch (tileDirection)
             {
-
-
                 // Down Conveyor Tile Case
                 case -2:
                     PlayerController.direction = tileDirection;
@@ -170,6 +166,8 @@ public class ForcedMovementManager : MonoBehaviour
                     PlayerController.inputCheck = true;
                     break;
             }
+            pastGridCoordinate = gridCoordinate;
+            Debug.Log(PlayerController.direction);
         }
 
 
