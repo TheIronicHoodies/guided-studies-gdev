@@ -595,9 +595,6 @@ MonoBehaviour:
   borderCheck:
     serializedVersion: 2
     m_Bits: 8
-  inputCheck:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!61 &855785865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -845,6 +842,53 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1291925638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291925640}
+  - component: {fileID: 1291925639}
+  m_Layer: 0
+  m_Name: Forced Movement Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1291925639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291925638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4a54a2ec8a4d04ba8b7f443d812586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ForcedMovementManager
+  controller: {fileID: 1810691858}
+  player: {fileID: 855785867}
+  movePoint: {fileID: 165998199}
+--- !u!4 &1291925640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291925638}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1608049301
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,6 +900,8 @@ GameObject:
   - component: {fileID: 1608049302}
   - component: {fileID: 1608049304}
   - component: {fileID: 1608049303}
+  - component: {fileID: 1608049306}
+  - component: {fileID: 1608049305}
   m_Layer: 7
   m_Name: Slide
   m_TagString: Untagged
@@ -971,6 +1017,60 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1608049305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608049301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a492e5458e9c644bebae885ab1e7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  movePoint: {fileID: 165998199}
+  borderCheck:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!19719996 &1608049306
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608049301}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &1810691856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,9 +1120,6 @@ MonoBehaviour:
   borderCheck:
     serializedVersion: 2
     m_Bits: 8
-  inputCheck:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &2003470715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,3 +1293,4 @@ SceneRoots:
   - {fileID: 855785867}
   - {fileID: 619394802}
   - {fileID: 375327873}
+  - {fileID: 1291925640}
