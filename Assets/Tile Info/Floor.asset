@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86bf59bbe49bb745a03b507ab71823b, type: 3}
   m_Name: Floor
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
-  tiles: []
+  tiles:
+  - {fileID: 11400000, guid: ffd0aae5590893c408eaf3877b2f4f07, type: 2}
   direction: 3

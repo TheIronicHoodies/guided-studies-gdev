@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86bf59bbe49bb745a03b507ab71823b, type: 3}
   m_Name: Slide
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
-  tiles: []
+  tiles:
+  - {fileID: 11400000, guid: 67b45497b63f6da4782b399dbbf90f1e, type: 2}
   direction: 0

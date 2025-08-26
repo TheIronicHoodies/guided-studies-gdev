@@ -17,6 +17,7 @@
 
 //     private Dictionary<TileBase, TileBehaviour> dataFromTiles;
 
+<<<<<<< HEAD
 //     private void Awake()
 //     {
 //         dataFromTiles = new Dictionary<TileBase, TileBehaviour>();
@@ -150,7 +151,5 @@
 //                     break;
 //             }
 //         }
-
-
 //     }
 // }
