@@ -258,3 +258,13 @@ Received Import Request.
 Start importing Assets/Tile Info/Conveyor_Left.asset using Guid(7448975d9fa56834194fd9dbfaac8ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'add758b56e6948885f8febb573adb593') in 0.0756735 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (1.0 KB). Loaded Objects now: 571.
+Memory consumption went from 56.1 MB to 56.1 MB.
+Total: 270.518042 ms (FindLiveObjects: 1.444667 ms CreateObjectMapping: 0.005709 ms MarkObjects: 269.015250 ms  DeleteObjects: 0.051500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
