@@ -9,6 +9,26 @@
     "/Applications/Unity/Hub/Editor/6000.2.1f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.unity.2d.sprite@1.0.0": {
+      "name": "com.unity.2d.sprite",
+      "displayName": "2D Sprite",
+      "resolvedPath": "/Users/kylie/Desktop/School/Guided_studies_1/Library/PackageCache/com.unity.2d.sprite@4ac596689b15",
+      "fingerprint": "4ac596689b15d52a1c1ff6d6544cf1b76bcee30e",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.2d.tilemap@1.0.0": {
+      "name": "com.unity.2d.tilemap",
+      "displayName": "2D Tilemap Editor",
+      "resolvedPath": "/Users/kylie/Desktop/School/Guided_studies_1/Library/PackageCache/com.unity.2d.tilemap@ba4a6b72f451",
+      "fingerprint": "ba4a6b72f4518be32ffa911682e3c1f11de50354",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
       "displayName": "Multiplayer Center",

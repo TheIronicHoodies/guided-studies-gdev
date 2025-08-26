@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Conveyor_Down
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
   tiles:
-  - {fileID: 11400000, guid: 6f7148a89272e9549a45771b4605af86, type: 2}
+  - {fileID: 0}
   direction: -2
