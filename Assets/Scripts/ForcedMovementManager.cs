@@ -19,6 +19,8 @@ public class ForcedMovementManager : MonoBehaviour
 
     private Vector3Int pastGridCoordinate;
 
+    public static bool teleported;
+
     private void Awake()
     {
         dataFromTiles = new Dictionary<TileBase, TileBehaviour>();
@@ -37,6 +39,7 @@ public class ForcedMovementManager : MonoBehaviour
     void Start()
     {
         pastGridCoordinate = map.WorldToCell(player.position);
+        teleported = false;
     }
 
 
@@ -51,11 +54,15 @@ public class ForcedMovementManager : MonoBehaviour
         int tileDirection = dataFromTiles[currentTile].direction;
         int futureTileDirection = dataFromTiles[futureTile].direction;
 
-        if (futureTileDirection < 3)
+        if (futureTileDirection < 3 && futureTileDirection > -3)
         {
             PlayerController.inputCheck = false;
         }
 
+        if (tileDirection > -3)
+        {
+            teleported = false;
+        }
 
         if (PlayerController.arrived)
         {

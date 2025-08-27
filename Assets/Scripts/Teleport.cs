@@ -26,14 +26,18 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach (var t in similar_tagged)
+        if (!ForcedMovementManager.teleported)
         {
-            if (t != gameObject)
+            foreach (var t in similar_tagged)
             {
-                movePoint = t.transform;
+                if (t != gameObject)
+                {
+                    movePoint = t.transform;
+                }
             }
+            player.position = movePoint.position;
+            ForcedMovementManager.teleported = true;
         }
         // When the player enters the tile their coordinates are moved to those of the "partner" tile
-        player.position = movePoint.position;
     }
 }

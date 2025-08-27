@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Teleport
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
   tiles:
+  - {fileID: 11400000, guid: 73a848e17ea037544b4daa7e5e29d468, type: 2}
+  - {fileID: 11400000, guid: 37eb1ebf8b22d3b41a5f99eff883a805, type: 2}
   - {fileID: 11400000, guid: 29532d9eca3956e44818d4745964b70c, type: 2}
-  - {fileID: 11400000, guid: 8cbe1aac05def094bb1304ccf28ee448, type: 2}
-  - {fileID: 11400000, guid: bfa7d15b7ba11964cb8006b0873947c8, type: 2}
-  - {fileID: 11400000, guid: 7afc45e4c1181304384c524831ef8981, type: 2}
+  - {fileID: 11400000, guid: 4d7846f57bc0b8e4487e0d0ade9143ae, type: 2}
   direction: -3
