@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: Slide
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
   tiles:
+<<<<<<< HEAD
   - {fileID: 11400000, guid: 67b45497b63f6da4782b399dbbf90f1e, type: 2}
+=======
+  - {fileID: 11400000, guid: fdcbce261b9d1f44a81d2d69a1e471a6, type: 2}
+  - {fileID: 11400000, guid: dcc0c018c5426b44097350b744608073, type: 2}
+>>>>>>> b9627096bef7ef75581d2597554388d190a98d6e
   direction: 0
