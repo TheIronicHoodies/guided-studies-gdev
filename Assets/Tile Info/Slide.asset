@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86bf59bbe49bb745a03b507ab71823b, type: 3}
+  m_Name: Slide
+  m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
+  tiles:
+  - {fileID: 11400000, guid: fdcbce261b9d1f44a81d2d69a1e471a6, type: 2}
+  - {fileID: 11400000, guid: dcc0c018c5426b44097350b744608073, type: 2}
+  direction: 0

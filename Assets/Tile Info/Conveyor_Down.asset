@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86bf59bbe49bb745a03b507ab71823b, type: 3}
+  m_Name: Conveyor_Down
+  m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
+  tiles:
+  - {fileID: 11400000, guid: 7b8146ab945a1164bb4bb186ab9531c4, type: 2}
+  - {fileID: 11400000, guid: fb5d69d101e84a14799306870d7de709, type: 2}
+  - {fileID: 11400000, guid: ea0cc9f49761a234ea2ae70428944183, type: 2}
+  direction: -2
