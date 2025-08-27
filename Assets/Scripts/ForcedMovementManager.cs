@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -18,6 +19,8 @@ public class ForcedMovementManager : MonoBehaviour
     private Dictionary<TileBase, TileBehaviour> dataFromTiles;
 
     private Vector3Int pastGridCoordinate;
+
+    private bool landingPoint;
 
     public static bool teleported, stopAnimation;
     public bool specialTile;
@@ -41,6 +44,7 @@ public class ForcedMovementManager : MonoBehaviour
     {
         pastGridCoordinate = map.WorldToCell(player.position);
         teleported = false;
+        landingPoint = false;
     }
 
 
@@ -55,7 +59,7 @@ public class ForcedMovementManager : MonoBehaviour
         int tileDirection = dataFromTiles[currentTile].direction;
         int futureTileDirection = dataFromTiles[futureTile].direction;
 
-        if (futureTileDirection < 3 && futureTileDirection > -3)
+        if (futureTileDirection < 3)
         {
             PlayerController.inputCheck = false;
             specialTile = true;
@@ -75,6 +79,122 @@ public class ForcedMovementManager : MonoBehaviour
             stopAnimation = true;
             switch (tileDirection)
             {
+                // Down Jump Tile Case
+                case -7:
+                    PlayerController.direction = -2;
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -4f, 0f), .2f, borderCheck))
+                    {
+                        PlayerController.moveSpeed = 7;
+                        movePoint.position += new Vector3(0f, -4f, 0f);
+                    }
+                    else
+                    {
+                        for (float i = 5; i < 9; i++)
+                        {
+                            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -i, 0f), .2f, borderCheck))
+                            {
+                                PlayerController.moveSpeed = 7;
+                                landingPoint = true;
+                                movePoint.position += new Vector3(0f, -i, 0f);
+                                break;
+                            }
+                        }
+
+                        if (!landingPoint)
+                        {
+                            PlayerController.inputCheck = true;
+                            specialTile = false;
+                        }
+                    }
+                    break;
+
+                // Left Jump Tile Case
+                case -6:
+                    PlayerController.direction = -1;
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-4f, 0f, 0f), .2f, borderCheck))
+                    {
+                        PlayerController.moveSpeed = 7;
+                        movePoint.position += new Vector3(-4f, 0f, 0f);
+                    }
+                    else
+                    {
+                        for (float i = 5; i < 9; i++)
+                        {
+                            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(-i, 0f, 0f), .2f, borderCheck))
+                            {
+                                PlayerController.moveSpeed = 7;
+                                landingPoint = true;
+                                movePoint.position += new Vector3(-i, 0f, 0f);
+                                break;
+                            }
+                        }
+
+                        if (!landingPoint)
+                        {
+                            PlayerController.inputCheck = true;
+                            specialTile = false;
+                        }
+                    }
+                    break;
+
+                // Right Jump Tile Case
+                case -5:
+                    PlayerController.direction = 1;
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(4f, 0f, 0f), .2f, borderCheck))
+                    {
+                        PlayerController.moveSpeed = 7;
+                        movePoint.position += new Vector3(4f, 0f, 0f);
+                    }
+                    else
+                    {
+                        for (float i = 5; i < 9; i++)
+                        {
+                            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(i, 0f, 0f), .2f, borderCheck))
+                            {
+                                PlayerController.moveSpeed = 7;
+                                landingPoint = true;
+                                movePoint.position += new Vector3(i, 0f, 0f);
+                                break;
+                            }
+                        }
+
+                        if (!landingPoint)
+                        {
+                            PlayerController.inputCheck = true;
+                            specialTile = false;
+                        }
+                    }
+                    break;
+
+                // Up Jump Tile Case
+                case -4:
+                    PlayerController.direction = 2;
+                    if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, 4f, 0f), .2f, borderCheck))
+                    {
+                        PlayerController.moveSpeed = 7;
+                        movePoint.position += new Vector3(0f, 4f, 0f);
+                    }
+                    else
+                    {
+                        for (float i = 5; i < 9; i++)
+                        {
+                            if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, -i, 0f), .2f, borderCheck))
+                            {
+                                PlayerController.moveSpeed = 7;
+                                landingPoint = true;
+                                movePoint.position += new Vector3(0f, -i, 0f);
+                                break;
+                            }
+                        }
+
+                        if (!landingPoint)
+                        {
+                            PlayerController.inputCheck = true;
+                            specialTile = false;
+                        }
+                    }
+                    break;
+
                 // Down Conveyor Tile Case
                 case -2:
                     PlayerController.direction = tileDirection;
@@ -186,6 +306,17 @@ public class ForcedMovementManager : MonoBehaviour
                     specialTile = false;
                     stopAnimation = false;
                     break;
+            }
+            if (tileDirection > -4)
+            {
+                if (tileDirection == 0)
+                {
+                    PlayerController.moveSpeed = 5;
+                }
+                else
+                {
+                PlayerController.moveSpeed = 3;
+                }
             }
             pastGridCoordinate = gridCoordinate;
             Debug.Log(PlayerController.direction);

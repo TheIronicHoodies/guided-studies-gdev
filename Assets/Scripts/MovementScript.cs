@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed;
+    public static float moveSpeed;
     public Transform movePoint;
     public LayerMask borderCheck;
     public static bool inputCheck, arrived, stationary;
@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
         inputCheck = true;
         transform.position += new Vector3(0f, 0f, 1f);
         previousPosition = transform.position;
+        moveSpeed = 3f;
     }
 
     // Update is called once per frame
