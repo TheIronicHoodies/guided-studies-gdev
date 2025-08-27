@@ -5,8 +5,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
     public Transform movePoint;
     public LayerMask borderCheck;
-    public static bool inputCheck, arrived;
+    public static bool inputCheck, arrived, stationary;
     public static float direction;
+    private int idle;
+    private Vector3 previousPosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,6 +16,7 @@ public class PlayerController : MonoBehaviour
         movePoint.parent = null;
         inputCheck = true;
         transform.position += new Vector3(0f, 0f, 1f);
+        previousPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -30,6 +33,7 @@ public class PlayerController : MonoBehaviour
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, borderCheck))
                 {
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                    idle = 0;
                 }
             }
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
@@ -38,6 +42,7 @@ public class PlayerController : MonoBehaviour
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, borderCheck))
                 {
                     movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                    idle = 0;
                 }
             }
          }
@@ -45,6 +50,23 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
+
+        if (previousPosition == transform.position)
+        {
+            idle += 1;
+        }
+
+        if (idle >= 10)
+        {
+            stationary = true;
+        }
+        else
+        {
+            stationary = false;
+        }
+
+        previousPosition = transform.position;
+
     }
 
 }

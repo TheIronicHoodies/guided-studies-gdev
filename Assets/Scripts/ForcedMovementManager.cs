@@ -19,7 +19,8 @@ public class ForcedMovementManager : MonoBehaviour
 
     private Vector3Int pastGridCoordinate;
 
-    public static bool teleported;
+    public static bool teleported, stopAnimation;
+    public bool specialTile;
 
     private void Awake()
     {
@@ -57,6 +58,11 @@ public class ForcedMovementManager : MonoBehaviour
         if (futureTileDirection < 3 && futureTileDirection > -3)
         {
             PlayerController.inputCheck = false;
+            specialTile = true;
+        }
+        else
+        {
+            stopAnimation = false;
         }
 
         if (tileDirection > -3)
@@ -64,8 +70,9 @@ public class ForcedMovementManager : MonoBehaviour
             teleported = false;
         }
 
-        if (PlayerController.arrived)
+        if (PlayerController.arrived && specialTile)
         {
+            stopAnimation = true;
             switch (tileDirection)
             {
                 // Down Conveyor Tile Case
@@ -79,6 +86,7 @@ public class ForcedMovementManager : MonoBehaviour
                     else
                     {
                         PlayerController.inputCheck = true;
+                        specialTile = false;
                     }
                     break;
 
@@ -94,6 +102,7 @@ public class ForcedMovementManager : MonoBehaviour
                     else
                     {
                         PlayerController.inputCheck = true;
+                        specialTile = false;
                     }
                     break;
 
@@ -107,6 +116,7 @@ public class ForcedMovementManager : MonoBehaviour
                     else
                     {
                         PlayerController.inputCheck = true;
+                        specialTile = false;
                     }
                         switch (PlayerController.direction)
                         {
@@ -149,6 +159,7 @@ public class ForcedMovementManager : MonoBehaviour
                     else
                     {
                         PlayerController.inputCheck = true;
+                        specialTile = false;
                     }
                     break;
 
@@ -164,6 +175,7 @@ public class ForcedMovementManager : MonoBehaviour
                     else
                     {
                         PlayerController.inputCheck = true;
+                        specialTile = false;
                     }
                     break;
 
@@ -171,6 +183,8 @@ public class ForcedMovementManager : MonoBehaviour
                 //Regular Tiles
                 case 3:
                     PlayerController.inputCheck = true;
+                    specialTile = false;
+                    stopAnimation = false;
                     break;
             }
             pastGridCoordinate = gridCoordinate;
