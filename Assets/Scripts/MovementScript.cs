@@ -19,11 +19,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //variable to check if Player and Movement point at the same point
-<<<<<<< HEAD
-        arrived = (Vector3.Distance(transform.position, movePoint.position) == 0f);
-=======
         arrived = (Vector3.Distance(transform.position, movePoint.position) <= 0f);
->>>>>>> b9627096bef7ef75581d2597554388d190a98d6e
 
         if (arrived && (inputCheck))
         {

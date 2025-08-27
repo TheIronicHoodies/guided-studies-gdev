@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/staging' branch; Version is '6000.2.1f1 (55300504c302) revision 5582853'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-migue" at "2025-08-27T07:45:20.3959179Z"
 OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 15674 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-migue" at "2025-08-27T06:54:59.3626904Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-08-27T06:54:59Z
+Date: 2025-08-27T07:45:20Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.2.1f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/migue/Desktop/Work/Guided Gdev/Tile-Based/ISCS Tile
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-55185
+55947
 -licensingIpc
 LicenseClient-migue
 -job-worker-count
@@ -65,12 +65,12 @@ C:/Users/migue/Desktop/Work/Guided Gdev/Tile-Based/ISCS Tile
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [27088]  Target information:
+Player connection [25384]  Target information:
 
-Player connection [27088]  * "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 714393167 [EditorId] 714393167 [Version] 1048832 [Id] WindowsEditor(7,XVX-016) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [25384]  * "[IP] 192.168.0.178 [Port] 0 [Flags] 2 [Guid] 3117742137 [EditorId] 3117742137 [Version] 1048832 [Id] WindowsEditor(7,XVX-016) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [27088] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [27088] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25384] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25384] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,17 +82,17 @@ Input System module state changed to: Initialized.
 	ResponseStatus: Unsupported protocol version '1.17.2'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-migue"
 [Licensing::IpcConnector] LicenseClient-migue channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-migue-6000.2.1" at "2025-08-27T06:54:59.40364Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 12480, path: "C:/Program Files/Unity/Hub/Editor/6000.2.1f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-migue-6000.2.1" at "2025-08-27T07:45:20.4379298Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 5344, path: "C:/Program Files/Unity/Hub/Editor/6000.2.1f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.2+ff71f16
-  Session Id:              0b65e4bc1fe740ec81e21755bc2536d1
-  Correlation Id:          80cef685786567139240bf31e63ec0fd
-  External correlation Id: 8125240096323224649
+  Session Id:              6e2de1c54d9d4b688a602bcf479b799d
+  Correlation Id:          5a892e357eb14e45e7a4cf0b1d447f37
+  External correlation Id: 3988731017096566737
   Machine Id:              7+JgiilEc4HpCi7JaEF0y5WsjhE=
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-migue-6000.2.1" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-migue-6000.2.1-notifications" at "2025-08-27T06:54:59.4122333Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-migue-6000.2.1-notifications" at "2025-08-27T07:45:20.4460691Z"
 [Licensing::Module] Licensing Background thread has ended after 0.05s
 Library Redirect Path: Library/
 [Physics::Module] Selected backend.
@@ -101,7 +101,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.46 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.1f1 (55300504c302)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -119,43 +119,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001305 seconds.
-- Loaded All Assemblies, in  0.340 seconds
+Registered in 0.001373 seconds.
+- Loaded All Assemblies, in  0.319 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.284 seconds
-Domain Reload Profiling: 622ms
-	BeginReloadAssembly (112ms)
+- Finished resetting the current domain, in  0.586 seconds
+Domain Reload Profiling: 903ms
+	BeginReloadAssembly (106ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (144ms)
-		LoadAssemblies (109ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (137ms)
+		LoadAssemblies (103ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (141ms)
-			TypeCache.Refresh (140ms)
-				TypeCache.ScanAssembly (125ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (120ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (284ms)
+	FinalizeReload (586ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (248ms)
+		SetupLoadedEditorAssemblies (518ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (111ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
+			InitializePlatformSupportModulesInManaged (52ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (146ms)
+			ProcessInitializeOnLoadAttributes (218ms)
+			ProcessInitializeOnLoadMethodAttributes (97ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -170,391 +170,106 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  0.801 seconds
-Refreshing native plugins compatible for Editor in 1.36 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.856 seconds
+Refreshing native plugins compatible for Editor in 1.86 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.667 seconds
-Domain Reload Profiling: 1463ms
-	BeginReloadAssembly (165ms)
+- Finished resetting the current domain, in  0.645 seconds
+Domain Reload Profiling: 1495ms
+	BeginReloadAssembly (280ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (42ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (541ms)
-		LoadAssemblies (411ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (469ms)
+		LoadAssemblies (414ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (216ms)
-			TypeCache.Refresh (155ms)
-				TypeCache.ScanAssembly (142ms)
-			BuildScriptInfoCaches (49ms)
+		AnalyzeDomain (213ms)
+			TypeCache.Refresh (153ms)
+				TypeCache.ScanAssembly (140ms)
+			BuildScriptInfoCaches (47ms)
 			ResolveRequiredComponents (8ms)
-	FinalizeReload (668ms)
+	FinalizeReload (645ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (532ms)
+		SetupLoadedEditorAssemblies (524ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (313ms)
-			ProcessInitializeOnLoadMethodAttributes (107ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (108ms)
+			ProcessInitializeOnLoadAttributes (318ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.71 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.40 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 37 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6765 unused Assets / (7.3 MB). Loaded Objects now: 7433.
-Memory consumption went from 148.3 MB to 141.0 MB.
-Total: 9.541200 ms (FindLiveObjects: 0.821000 ms CreateObjectMapping: 0.249900 ms MarkObjects: 4.784500 ms  DeleteObjects: 3.684700 ms)
+Unloading 6765 unused Assets / (7.2 MB). Loaded Objects now: 7434.
+Memory consumption went from 144.7 MB to 137.5 MB.
+Total: 11.182900 ms (FindLiveObjects: 0.688000 ms CreateObjectMapping: 0.543500 ms MarkObjects: 4.579400 ms  DeleteObjects: 5.370800 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 658204.107811 seconds.
-  path: Assets/Final Sprites/Player Sprites/gdev tile spritesheet_54.asset
-  artifactKey: Guid(38b0e9e45fed734459c17c98d0b9be72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Player Sprites/gdev tile spritesheet_54.asset using Guid(38b0e9e45fed734459c17c98d0b9be72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '349ecba64bc18c8bedb79ee50d4cdc19') in 0.1104146 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.737 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.707 seconds
+Domain Reload Profiling: 1445ms
+	BeginReloadAssembly (220ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (454ms)
+		LoadAssemblies (353ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (189ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (171ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (708ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (552ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (126ms)
+			ProcessInitializeOnLoadAttributes (351ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 1.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6763 unused Assets / (6.7 MB). Loaded Objects now: 7437.
+Memory consumption went from 146.3 MB to 139.6 MB.
+Total: 13.919800 ms (FindLiveObjects: 0.925400 ms CreateObjectMapping: 1.103400 ms MarkObjects: 6.647400 ms  DeleteObjects: 5.242000 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Final Sprites/Player Sprites/gdev tile spritesheet_65.asset
-  artifactKey: Guid(da9eec64c4171f4408286fd2cc71b07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Player Sprites/gdev tile spritesheet_65.asset using Guid(da9eec64c4171f4408286fd2cc71b07e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35082f20edef3f6b8664deb9bb527e23') in 0.0214711 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Final Sprites/Player Sprites/gdev tile spritesheet_55.asset
-  artifactKey: Guid(d33af2f9c0554ed4aaac7e69b1db1c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Player Sprites/gdev tile spritesheet_55.asset using Guid(d33af2f9c0554ed4aaac7e69b1db1c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78bfe16ec05dc0098d1b12f82a67b394') in 0.0200179 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Final Sprites/Player Sprites/gdev tile spritesheet_83.asset
-  artifactKey: Guid(869315f8707331c409cdd59be15f9be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Player Sprites/gdev tile spritesheet_83.asset using Guid(869315f8707331c409cdd59be15f9be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a9b829cd7323add70a0fe4d8d66b6a2') in 0.0212518 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.919322 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_54.asset
-  artifactKey: Guid(e2e291b30470b8444958d292f637d068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_54.asset using Guid(e2e291b30470b8444958d292f637d068) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '217d221710146e5a11e756dd3984848c') in 0.0295101 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_64.asset
-  artifactKey: Guid(3d615c310ca2fa9458d7895bb5c7e4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_64.asset using Guid(3d615c310ca2fa9458d7895bb5c7e4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '524744685bd39f5a92e5131d3b8369a8') in 0.0086372 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_55.asset
-  artifactKey: Guid(d3f256f17657edb4896654c53d811480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_55.asset using Guid(d3f256f17657edb4896654c53d811480) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7463668175f5ec44064647592af7a76a') in 0.0110356 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_82.asset
-  artifactKey: Guid(e48d734aa61c18c488e1d5a365763261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_82.asset using Guid(e48d734aa61c18c488e1d5a365763261) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5439a37041944ef94a4f2b7fcb70ea7') in 0.0129615 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_65.asset
-  artifactKey: Guid(ce9377a0f5677af44800208603550de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_65.asset using Guid(ce9377a0f5677af44800208603550de3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fdc2ce223627722126fe72b740c7a0cc') in 0.0215402 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.137975 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_54 1.asset
-  artifactKey: Guid(160c0dbbc3a36124b99e112de9b4d936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_54 1.asset using Guid(160c0dbbc3a36124b99e112de9b4d936) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a279b40cca38957af656327cc468584') in 0.0138351 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_80 1.asset
-  artifactKey: Guid(b1b62624cd264b6418bf077a6f0777bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_80 1.asset using Guid(b1b62624cd264b6418bf077a6f0777bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '509ba128a4ecd131ecae692b7e90a9e6') in 0.0169107 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_62 1.asset
-  artifactKey: Guid(fd1c0395416b74a4faa6bfffae62c07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_62 1.asset using Guid(fd1c0395416b74a4faa6bfffae62c07c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf2525d79c7018984e6f790a20d1f880') in 0.0095143 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Final Sprites/Walls/gdev tile spritesheet_83 1.asset
-  artifactKey: Guid(c4b9611dd47c49348a7c260992080ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Walls/gdev tile spritesheet_83 1.asset using Guid(c4b9611dd47c49348a7c260992080ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e02f9ecd4870fbef70364efc2c9563f') in 0.0111316 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.794452 seconds.
-  path: Assets/Final Sprites/Borders/gdev tile spritesheet_4.asset
-  artifactKey: Guid(a0606e37e2faad54285dab199380db38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Borders/gdev tile spritesheet_4.asset using Guid(a0606e37e2faad54285dab199380db38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76d66f1559cb79f75dd624a2d1e443cc') in 0.0237775 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Final Sprites/Borders/gdev tile spritesheet_57.asset
-  artifactKey: Guid(0a11b459255433c4cbabb314c349d7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Borders/gdev tile spritesheet_57.asset using Guid(0a11b459255433c4cbabb314c349d7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8159a497ed16fddaf96ab5a22e6d10c4') in 0.1150352 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Final Sprites/Borders/gdev tile spritesheet_58.asset
-  artifactKey: Guid(38e42fca5635af144b27f5196b55157a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Borders/gdev tile spritesheet_58.asset using Guid(38e42fca5635af144b27f5196b55157a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5355a5908bc7ce909d6616d0ff3efc3') in 0.0199022 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Final Sprites/Borders/gdev tile spritesheet_69.asset
-  artifactKey: Guid(92e81f3d67fd7834cbc3c3dd097eb09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Borders/gdev tile spritesheet_69.asset using Guid(92e81f3d67fd7834cbc3c3dd097eb09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c26b7088338981f4b41dc2155b4d3426') in 0.0100705 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Final Sprites/Borders/gdev tile spritesheet_66.asset
-  artifactKey: Guid(efa0a9bedc2bcc14792c64f0b090f3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Borders/gdev tile spritesheet_66.asset using Guid(efa0a9bedc2bcc14792c64f0b090f3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76d8d8c780bc26a6305cd54b6abd2559') in 0.026431 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Final Sprites/Borders/gdev tile spritesheet_68.asset
-  artifactKey: Guid(19fa7f7f96063a748899ccaee132a2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Borders/gdev tile spritesheet_68.asset using Guid(19fa7f7f96063a748899ccaee132a2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cee028321374ab8ee9d584e80b16637') in 0.0209694 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Final Sprites/Borders/gdev tile spritesheet_70.asset
-  artifactKey: Guid(23897f45ce518254ab2847de4ef31a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Borders/gdev tile spritesheet_70.asset using Guid(23897f45ce518254ab2847de4ef31a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6c0857cde9ffbeb199792d2b184a0db') in 0.0253037 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 90.555185 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_6.asset
-  artifactKey: Guid(b7973522b0b77b54db3a5012705d1578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_6.asset using Guid(b7973522b0b77b54db3a5012705d1578) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13a5a7fa0999c5979e83db23e5e86032') in 0.0237005 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_29.asset
-  artifactKey: Guid(1628bced0b1b1cd489b26b8bb3ee7f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_29.asset using Guid(1628bced0b1b1cd489b26b8bb3ee7f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fc97ad91cb92876468f33947f8a3205') in 0.0264718 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_28.asset
-  artifactKey: Guid(aa4c825b11e928a4685f22911fa20987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_28.asset using Guid(aa4c825b11e928a4685f22911fa20987) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2983e16b5db62489c8ff45b1e4cf87e8') in 0.0330892 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_25.asset
-  artifactKey: Guid(747502960d630a14a9cbf85c8638d665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_25.asset using Guid(747502960d630a14a9cbf85c8638d665) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93613c121f6e8233e9d88f287ce35731') in 0.0259901 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_37.asset
-  artifactKey: Guid(96700c285cf1f73449c91ac999de1d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_37.asset using Guid(96700c285cf1f73449c91ac999de1d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '244be819becd25c0b2e627650b49d4b3') in 0.0226772 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_50.asset
-  artifactKey: Guid(f113485026bbe694e81f488741e83adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_50.asset using Guid(f113485026bbe694e81f488741e83adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a897580c65a3cce3e58a59ae09ed5d2d') in 0.0398859 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_49.asset
-  artifactKey: Guid(c69aa193f7f9cac44961a0c62de257c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_49.asset using Guid(c69aa193f7f9cac44961a0c62de257c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17216371cad7cd5e891beead953415f0') in 0.025231 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_41.asset
-  artifactKey: Guid(d40117580b61ca54a9bddb3727c5a6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_41.asset using Guid(d40117580b61ca54a9bddb3727c5a6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7362de9a55217c64e88f0b1a0ce89e2') in 0.0186185 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_24.asset
-  artifactKey: Guid(e0eb3ee7c85e22e418292737ff352dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_24.asset using Guid(e0eb3ee7c85e22e418292737ff352dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e843bd459ecb4e9640bb97eb503898e') in 0.0239211 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_47.asset
-  artifactKey: Guid(827108f8baf1904498dfb5ca5a12346c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_47.asset using Guid(827108f8baf1904498dfb5ca5a12346c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c04ac2d953ecac9dadc06181e71f2591') in 0.0191238 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_18.asset
-  artifactKey: Guid(05718ee750b9ea24aa000b9efb703abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_18.asset using Guid(05718ee750b9ea24aa000b9efb703abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19b8a6b93c5656d58ff15acfa9d4de77') in 0.0334608 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_48.asset
-  artifactKey: Guid(db29373fa44d48d4a922b4bb0083e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_48.asset using Guid(db29373fa44d48d4a922b4bb0083e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c00026d0ab51f9750b13bb33e126926') in 0.0199887 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_40.asset
-  artifactKey: Guid(cdf3dd7b7ce87e0489eb9135cd14fb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_40.asset using Guid(cdf3dd7b7ce87e0489eb9135cd14fb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3520a4a9fb12f8d65814f8af4d932f3f') in 0.0101252 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Final Sprites/Floor/gdev tile spritesheet_26.asset
-  artifactKey: Guid(d3e5eeeb4986f59458983b299d9d9f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Floor/gdev tile spritesheet_26.asset using Guid(d3e5eeeb4986f59458983b299d9d9f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df1928f0507680bc9bbc4c8f605d2342') in 0.0210929 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.795311 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_7.asset
-  artifactKey: Guid(53262cdf627c98949932d0ccdd8c3bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_7.asset using Guid(53262cdf627c98949932d0ccdd8c3bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd77c4b820a7ad6f2327745f7e7e1b63b') in 0.0116299 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_40.asset
-  artifactKey: Guid(f4b494a1daa84d14f9c47d13fdf6a516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_40.asset using Guid(f4b494a1daa84d14f9c47d13fdf6a516) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '800f30799f723b4a589e8350c4b85093') in 0.0100112 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_27.asset
-  artifactKey: Guid(4b9428de167c93c4ea611a19cbbb6b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_27.asset using Guid(4b9428de167c93c4ea611a19cbbb6b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1546ff93d06b4dc3af0ce39288c10c23') in 0.0101913 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_14.asset
-  artifactKey: Guid(410908da9b8bd1e488f24d1202c6ac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_14.asset using Guid(410908da9b8bd1e488f24d1202c6ac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'feed17351fde652b06c37e2fc7c2bbe1') in 0.0084926 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_50.asset
-  artifactKey: Guid(2fd000890b923744ab4c7668e19197e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_50.asset using Guid(2fd000890b923744ab4c7668e19197e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15de3bd6c4bc948598e72d3664bc9335') in 0.0165602 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_16.asset
-  artifactKey: Guid(a73093eb1f55fd649a497bc719b97747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_16.asset using Guid(a73093eb1f55fd649a497bc719b97747) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c1900ce48a79adf4c7f27c1c642371b') in 0.0099167 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_37.asset
-  artifactKey: Guid(7e37c30cbdd68cc4290018ff713e78a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_37.asset using Guid(7e37c30cbdd68cc4290018ff713e78a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3681ed2f3b98bfd59c86b9b79017b15d') in 0.0156579 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Final Sprites/Slide/gdev tile spritesheet_41.asset
-  artifactKey: Guid(e200ff3bd406cda4da7ca066caca71a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final Sprites/Slide/gdev tile spritesheet_41.asset using Guid(e200ff3bd406cda4da7ca066caca71a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0fd520f1203cc81be465059143d723e6') in 0.0085229 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
+Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
