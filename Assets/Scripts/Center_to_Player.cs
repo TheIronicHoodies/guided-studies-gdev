@@ -7,6 +7,7 @@ public class Center_to_Player : MonoBehaviour
     void Start()
     {
         transform.SetParent(newParent);
+        transform.position = new Vector3(0f, 0f, 5f);
     }
 
     // Update is called once per frame
