@@ -384,6 +384,7 @@
 "Assets/Scripts/ForcedMovementManager.cs"
 "Assets/Scripts/MovementScript.cs"
 "Assets/Scripts/SlideScript.cs"
+"Assets/Scripts/Teleport.cs"
 "Assets/Scripts/TileBehaviour.cs"
 -langversion:9.0
 /deterministic
