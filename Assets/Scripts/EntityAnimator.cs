@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerAnimator : MonoBehaviour
+public class EntityAnimator : MonoBehaviour
 {
     private Animator animator;
     private string currentAnimation;
@@ -27,11 +27,11 @@ public class PlayerAnimator : MonoBehaviour
     }
 
     private void CheckAnimation()
-    { 
-        switch(MovementScript.direction)
+    {
+        switch (EntityMovementScript.direction)
         {
             case -2:
-                if (!MovementScript.stationary && !ForcedMovementManager.stopAnimation)
+                if (!EntityMovementScript.stationary && !EntityForcedMovement.stopAnimation)
                 {
                     ChangeAnimation("Walk_Down");
                 }
@@ -39,9 +39,9 @@ public class PlayerAnimator : MonoBehaviour
                 {
                     ChangeAnimation("Stationary_Down");
                 }
-                    break;
+                break;
             case -1:
-                if (!MovementScript.stationary && !ForcedMovementManager.stopAnimation)
+                if (!EntityMovementScript.stationary && !EntityForcedMovement.stopAnimation)
                 {
                     ChangeAnimation("Walk_Left");
                 }
@@ -51,7 +51,7 @@ public class PlayerAnimator : MonoBehaviour
                 }
                 break;
             case 1:
-                if (!MovementScript.stationary && !ForcedMovementManager.stopAnimation)
+                if (!EntityMovementScript.stationary && !EntityForcedMovement.stopAnimation)
                 {
                     ChangeAnimation("Walk_Right");
                 }
@@ -61,7 +61,7 @@ public class PlayerAnimator : MonoBehaviour
                 }
                 break;
             case 2:
-                if (!MovementScript.stationary && !ForcedMovementManager.stopAnimation)
+                if (!EntityMovementScript.stationary && !EntityForcedMovement.stopAnimation)
                 {
                     ChangeAnimation("Walk_Up");
                 }

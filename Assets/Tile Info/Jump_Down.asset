@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
   tiles:
   - {fileID: 11400000, guid: 50513d3feb5c0954f85c826a6dfe2bd0, type: 2}
-  direction: -7
+  direction: -6

@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a86bf59bbe49bb745a03b507ab71823b, type: 3}
-  m_Name: Teleport
+  m_Name: Teleport_Orange
   m_EditorClassIdentifier: Assembly-CSharp::TileBehaviour
   tiles:
   - {fileID: 11400000, guid: 73a848e17ea037544b4daa7e5e29d468, type: 2}
-  - {fileID: 11400000, guid: 37eb1ebf8b22d3b41a5f99eff883a805, type: 2}
   - {fileID: 11400000, guid: 29532d9eca3956e44818d4745964b70c, type: 2}
-  - {fileID: 11400000, guid: 4d7846f57bc0b8e4487e0d0ade9143ae, type: 2}
-  direction: -3
+  direction: -8
